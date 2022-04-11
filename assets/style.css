@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #fff;
+    background-color: #000;
 }
 
 body{
@@ -11,7 +13,11 @@ body{
     
 }
 textarea{
+    border: 2px solid rgb(35, 84, 199);
     resize: none;
+}
+input{
+    border: 2px solid rgb(35, 84, 199);
 }
 
 .input-tareas{
@@ -29,7 +35,7 @@ textarea{
 button{
     background: none;
     border-radius: 5px;
-    border: 1px solid #666;
+    border: 2px solid rgb(35, 84, 199);
     padding: 10px;
     box-shadow: 3px 3px 10px #666;
 }
@@ -51,10 +57,18 @@ button{
 .pendiente, .en-proceso, .finalizada{
     width: 200px;
     height: 100px;
-    border: 1px solid green;
+    border: 3px solid rgb(194, 23, 23);
+}
+
+.en-proceso{
+    border: 3px solid rgb(226, 216, 25);
+}
+.finalizada{
+    border: 3px solid rgb(45, 192, 45);
 }
 
 .p-lista{
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #aaa;
     text-align: center;
 }
+

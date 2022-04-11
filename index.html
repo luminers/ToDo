@@ -13,19 +13,19 @@
       
       <form>
           <h3>Nombre: </h3>
-        <input type="text" placeholder="Nombre de la tarea..." required>
+        <input id="nombreTarea" type="text" placeholder="Nombre de la tarea..." value="test" >
         <h3>Tarea:</h3>
-        <textarea name="tarea" id="" cols="30" rows="3" placeholder="Descripción de la tarea..." required ></textarea> 
+        <textarea name="tarea" id="descripcionTarea" cols="30" rows="3" placeholder="Descripción de la tarea..."  >test</textarea> 
         <div class="estado">
-            <label for="pendiente">Pendiente</label><input type="radio" name="estado" id="pendiente">
+            <label for="pendiente">Pendiente</label><input  type="radio" name="estado" id="pendiente">
             <label for="enProgreso">En progreso</label> <input type="radio" name="estado" id="enProgreso">
             <label for="finalizada">Finalizada</label><input type="radio" name="estado" id="finalizada">
         </div>
 
 
-        <button type="submit" id="agregar" >Agregar</button>
+        <input type="button" id="agregar" value="Agregar">
       </form>
-
+      
     </section>
 
 

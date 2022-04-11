@@ -3,3 +3,31 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+textarea{
+    resize: none;
+}
+
+.input-tareas{
+    margin: 10px;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 40px;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    background: none;
+    border-radius: 5px;
+    border: 1px solid #666;
+    padding: 10px;
+    box-shadow: 3px 3px 10px #666;
+}

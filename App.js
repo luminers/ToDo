@@ -2,7 +2,7 @@ const $nombre = document.getElementById("nombreTarea"),
 $descripcion=document.getElementById("descripcionTarea"),
 $listaPendiente=document.querySelector(".pendiente"),
 $listaEnProceso=document.querySelector(".en-proceso"),
-$listaFinalizada=document.querySelector(".finalilzada"),
+$listaFinalizada=document.querySelector(".finalizada"),
 $fragmento=document.createDocumentFragment(),
 $btnAgregar=document.getElementById("agregar"),
 $radioButtons=document.querySelectorAll(`input[type="radio"]`);
@@ -26,12 +26,11 @@ $btnAgregar.addEventListener("click",  () =>{
             $listaPendiente.innerHTML+=tarea;
             break;
         case "enProgreso":
-             $listaPendiente.innerHTML+=tarea;
+             $listaEnProceso.innerHTML+=tarea;
              break;
         case "finalizada":
-             $listaPendiente.innerHTML+=tarea;
+             $listaFinalizada.innerHTML+=tarea;
              break;
-     
          default:
              break;
      }
